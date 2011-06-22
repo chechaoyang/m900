@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>900月人生</title>
+    <style type="text/css">
+      body { font-size: 12px; }
+      .clear { clear: both; }
+      .lifetime { position: relative; width: 900px; height: auto; overflow: hidden; margin: 0 auto; }
+      .m900 { background-color: #EEE; height: auto; overflow: hidden; }
+      .m { width: 18px; height: 18px; margin: 1px; background-color: green; display: inline-block; float: left; }
+      .past { background-color: #333; }
+      .description { margin-top: 50px; }
+    </style>
+  </head>
+  <body>
+    <div class="lifetime">
+      <div class="m900">
+        <% (1..900).each do |m| %><li class="m<%= " past" if m <= @months %>"></li><% end %>
+      </div>
+      <div class="description">
+        已用使用<%= @months %>月，共900月。 <a href="/">返回</a>
+      </div>
+    </div>
+  </body>
+</html>

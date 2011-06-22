@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>900个月的人生</title>
+    <style type="text/css">
+      body { font-size: 12px; }
+      #container { position: relative; width: 900px; height: auto; overflow: hidden; margin: 0 auto; text-align: center; }
+      #introduction { margin-top: 90px; }
+      .form { background-color: #EEE; width: 280px; height: auto; padding: 10px; margin: 20px auto 0; overflow: hidden; }
+      .thanks, .author { margin-top: 15px; }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="introduction">
+        你知道吗？人生只有900个月！输入出生日期（例如：1986-1-1），看看你的时间使用情况。
+      </div>
+      <div class="form">
+        <form action="/since" method="get">
+          出生日期 <input type="text" name="birthday" size="10" /> <input type="submit" value="提交" />
+        </form>
+      </div>
+      <div class="thanks">
+        灵感来自于这篇博客<a href="http://www.ruanyifeng.com/blog/2011/05/900-month_lifespan.html" target="_blank">《人生只有900个月》</a>。
+      </div>
+      <div class="author">
+        作者：<a href="https://github.com/tiroc">tiroc</a>
+      </div>
+    </div>
+  </body>
+</html>
